@@ -1,0 +1,156 @@
+19.02.2021
+
+04:08:25 From  Al Bellamy  to  Everyone : feels like I've been hanging out with Thom, Wilson, Vikram all day!
+04:14:58 From  Russell Willis  to  Everyone : Start small and iterate... Taking too large a bite at once, can be a large swallow for the creators and a HUGE issue for those whose paradigms it will change!
+04:15:25 From  Mikiko Bazeley  to  Everyone : No! Not too late to learn the principles!
+04:15:33 From  Thomas Ives  to  Everyone : What Russell said!
+04:15:56 From  Thomas Ives  to  Everyone : What Mikiko said!
+04:18:13 From  Harpreet Sahota  to  Everyone : If anyone has questions, let me know!!
+04:18:22 From  Mikiko Bazeley  to  Everyone : +1 to Joe
+04:20:07 From  Russell Willis  to  Everyone : like the law of diminishing returns...
+04:22:16 From  Eric Sims  to  Everyone : What's up, Mark!
+04:22:41 From  Mikiko Bazeley  to  Everyone : Feature stores feel like the next battlefield between the desire to standardize ML ops for steadier production & the desire to stay flexible and creative
+04:22:58 From  Vikram Krishna Kotturu  to  Everyone : +1 Mikiko
+04:23:00 From  Vin Vashishta  to  Everyone : ME TOO, it's endless.
+04:23:14 From  Joe Reis  to  Everyone : truly
+04:23:15 From  Greg Coquillo  to  Everyone : https://www.linkedin.com/posts/greg-coquillo_datascience-machinelearning-artificialintelligence-activity-6760977800963985408-ys5y
+04:23:23 From  Thomas Ives  to  Everyone : It's remembering all the shit that's hard too!
+04:23:25 From  Matthew Housley  to  Everyone : @mikiko Interesting. Yeah, that encapsulates it pretty well.
+04:23:45 From  Eric Sims  to  Everyone : Today's happy hour content is going over my head like 100 Starlink satellites 😂
+04:23:48 From  Mikiko Bazeley  to  Everyone : We were having this argument-debate with the cofounding team
+04:23:58 From  Thomas Ives  to  Everyone : Eric ;-)
+04:24:16 From  Thomas Ives  to  Everyone : Mikiko, I think I will just start quoting you and sleep more!
+04:24:22 From  Kushal Dev  to  Everyone : Same Eric ;)
+04:24:22 From  Mikiko Bazeley  to  Everyone : <3
+04:24:32 From  Matthew Housley  to  Everyone : And ideally, an organization needs to maintain both, but that’s a struggle even in a large company, let alone a startup with limited resources.
+04:24:53 From  Brandon Quach  to  Everyone : That’s one of the reasons I come to office hours. I learn from all of you about new technologies that I don’t get to see or explore doing my day to day work
+04:26:14 From  Thomas Ives  to  Everyone : Agreed Brandon!
+04:26:51 From  Russell Willis  to  Everyone : +1 @Brandon
+04:28:15 From  Mark Freeman  to  Everyone : I have a question. Can I please be added to the que?
+04:28:25 From  Harpreet Sahota  to  Everyone : Yes! Added
+04:28:41 From  Joe Reis  to  Everyone : This is a VERY good talk on the most cutting edge thing I’ve seen - The Evaluation Store
+04:28:42 From  Joe Reis  to  Everyone : https://www.youtube.com/watch?v=o4q_ljRkXqw
+04:28:59 From  Tor Rorvik  to  Everyone : "Audit Trail" comes to mind
+04:29:18 From  Russell Willis  to  Everyone : should we expect "Feature Stores" content to be monetised, for wider distribution, or kept protected as internal IP?
+04:29:32 From  Joe Reis  to  Everyone : ^ this is a good question
+04:29:55 From  Mikiko Bazeley  to  Everyone : One of the ideas we came up with was to have a dev-prod staging setup for features to get logged — I.e. have a raw table/stage and then evaluate features after they’ve shown to be valuable on a longer term
+04:30:10 From  Mikiko Bazeley  to  Everyone : Similar to forecasts and reports
+04:30:59 From  Mikiko Bazeley  to  Everyone : @Mark- Love the background! DuBois for the win!
+04:31:05 From  Eric Sims  to  Everyone : ^^
+04:32:02 From  Russell Willis  to  Everyone : @Mark are you talking about an incremental load function, that only loads recent changing data, rather than reload everything including static data from months ago?
+04:34:52 From  Greg Coquillo  to  Everyone : I have a follow up question too on this for Mark, Joe and Matthew
+04:35:03 From  Harpreet Sahota  to  Everyone : Go for it!
+04:36:25 From  Mikiko Bazeley  to  Everyone : A resource I thought was really helpful for understanding partitioning: https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch06.html
+04:36:33 From  Mikiko Bazeley  to  Everyone : It’s a good chapter
+04:36:40 From  Russell Willis  to  Everyone : Follow up - Do any providers incorporate passive partitioning (Intelligently applied) depending upon the type and class of data being loaded/queried, so as to reduce their utilised bandwidth, or is this counter intuitive to their revenue generation?
+04:37:35 From  Harpreet Sahota  to  Everyone : If anyone has a question - doesn’t have to be related to the topic at hand - message me!  I will add you to the queue
+04:37:56 From  Mikiko Bazeley  to  Everyone : @Russell: Snowkflake claims too I believe (https://docs.snowflake.com/en/user-guide/tables-clustering-micropartitions.html)
+04:37:58 From  Harpreet Sahota  to  Everyone : Look at all these amazing resources and experiences for you to tap into!
+04:38:41 From  Matthew Housley  to  Everyone : Yeah, Snowflake claims that they periodically auto recluster, and you can manually do this as well.
+04:39:02 From  Mikiko Bazeley  to  Everyone : I know when we were talking to Snowflake their claims were that they were easier on the admin/maintenance than Redshift (although they “technically” couldn’t say so as a Redshift partner)
+04:40:10 From  Matthew Housley  to  Everyone : BigQuery claims that they more aggressively auto recluster, but they can manually force a recluster by selecting the data into a new table.
+04:40:31 From  Joe Reis  to  Everyone : @mikiko - We’re partners with AWS and Snowflake, but we _can_ say this is arguably true
+04:41:09 From  Mikiko Bazeley  to  Everyone : Cool! We ended up going with Snowflake as being startup friendlier so that’s validating
+04:41:20 From  Eric Sims  to  Everyone : Can you use Box-Tidwell to suss out the degree of the relationship?
+04:41:27 From  Matthew Housley  to  Everyone : @mikiko In this case, I definitely agree with Snowflake. While AWS has made a lot of efforts to add new features to Redshift, they carry a lot of tech debt that BigQuery and Snowflake simply don’t have.
+04:41:28 From  Joe Reis  to  Everyone : Nice. Let us know if you have questions as you use Snowflake
+04:41:36 From  Mikiko Bazeley  to  Everyone : Totes!
+04:42:17 From  Matthew Housley  to  Everyone : I feel like you can’t go wrong with Snowflake or BigQuery at this point - they’re basically copying each other’s features now.
+04:42:41 From  Mikiko Bazeley  to  Everyone : XD
+04:42:47 From  Matthew Housley  to  Everyone : It largely comes down to which cloud you want to be on, and whether or not you need multicloud support.
+04:42:48 From  Joe Reis  to  Everyone : Even Redshift is very good too. It’s really a question of how hands on you want to be.
+04:42:51 From  Mark Freeman  to  Everyone : Have you checked out the stats flow chart in the latest newsletter? It’s amazing! https://drive.google.com/file/d/1qkURyDrEa4IkQRm0in26CNIpP84ws0Tf/view
+04:43:51 From  Matthew Housley  to  Everyone : @mark Cool! I had not looked at this.
+04:43:52 From  Harpreet Sahota  to  Everyone : https://realpython.com/numpy-scipy-pandas-correlation-python/
+04:43:59 From  Jennifer Nardin  to  Everyone : Great flow chart!
+04:44:03 From  Mitul Patel  to  Everyone : https://easystats.github.io/correlation/articles/types.html in R
+04:44:29 From  Eric Sims  to  Everyone : You can use Pandas-Profiling to look at those different correlation measures in your data
+04:47:08 From  Russell Willis  to  Everyone : @Harpreet Often those with the problem cannot elucidate it sufficiently for others to solve. I think It is a very good skill to be able to interpret incomplete explanations/data, in different ways, depending upon the origin?
+04:47:08 From  Mark Freeman  to  Everyone : Also, there is the Predictive Power Score: https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598
+04:47:43 From  Eric Sims  to  Everyone : @Kushal, if you're looking at a binary outcome, you could use a Box-Tidwell transformation or a spline function (GAM) to figure out what degree of relationship exists
+04:47:58 From  Eric Sims  to  Everyone : Can't touch this!
+04:48:22 From  Harpreet Sahota  to  Everyone : Excellent point Russ!
+04:49:47 From  Vin Vashishta  to  Everyone : So sounds like what all of us do.
+04:49:57 From  Eric Sims  to  Everyone : There goes my monthly free Medium article allotment!
+04:50:26 From  Thomas Ives  to  Everyone : Eric, I hear ya!
+04:50:26 From  Kushal Dev  to  Everyone : Thanks @Eric! Box Tidwell Transform is something New, going to have hands-on for sure!
+04:50:26 From  Harpreet Sahota  to  Everyone : Open an incognito window and you can bypass
+04:50:34 From  Joe Reis  to  Everyone : Tor
+04:50:46 From  Joe Reis  to  Everyone : (The browser)
+04:50:54 From  Mikiko Bazeley  to  Everyone : XD
+04:51:17 From  Russell Willis  to  Everyone : Isn't one of the biggest problems with web scraping, that GDPR (or other data privacy regulations) differ globally?
+04:51:25 From  Kushal Dev  to  Everyone : Loved the resource @Mark Very Helpful!
+04:51:47 From  Eric Sims  to  Everyone : @Kushal - Box-Tidwell is cool because it will give you the exact exponent.  The only drawback is you can't have zeros or negative numbers in the column.  You can use a GAM to get around that, but you just have to eyeball the curve to see if it's quadratic, cubic, etc.
+04:53:35 From  Eric Sims  to  Everyone : Selenium is Python
+04:53:52 From  Mikiko Bazeley  to  Everyone : It seems the issue is how to centralize
+04:53:55 From  Mikiko Bazeley  to  Everyone : Ad deploy
+04:54:25 From  Mikiko Bazeley  to  Everyone : Real Python and DataCamp are great resources
+04:54:26 From  Mikiko Bazeley  to  Everyone : https://realpython.com/courses/python-lambda-functions/
+04:54:36 From  Mikiko Bazeley  to  Everyone : https://learn.datacamp.com/courses/streaming-data-with-aws-kinesis-and-lambda
+04:54:54 From  Kushal Dev  to  Everyone : @Eric - Ah! GAM looks good for my case! Surely Insightful
+04:55:05 From  Eric Sims  to  Everyone : @Kushal - Awesome!
+04:55:14 From  Eric Sims  to  Everyone : @Juico - I once upon a time had a run-in with an image copyright troll.  They don't mess around, and they are nasty.  A buyer's indemnity clause saved my bacon, so yeah, be careful with that.
+04:55:44 From  Mark Freeman  to  Everyone : Lambda Doc as I always get lost in AWS docs: https://docs.aws.amazon.com/toolkit-for-eclipse/v1/user-guide/lambda-tutorial.html
+04:56:27 From  Matthew Housley  to  Everyone : Scrapping almost always violates terms of service, but enforceability varies. Definitely watch out for the trolls.
+04:56:28 From  Joe Reis  to  Everyone : rtfm
+04:56:45 From  Joe Reis  to  Everyone : Yeah, and make sure you’re not doing anything to get shut down by AWS
+04:56:55 From  Mark Freeman  to  Everyone : There I go… getting lost in AWS docs again. Here is the real link: https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+04:57:14 From  Mikiko Bazeley  to  Everyone : AWS also has a series of courses hosted on Coursera — it’s a useful way to walk through the apps and is Amazon hosted
+04:57:21 From  Mikiko Bazeley  to  Everyone : *Amazon authored
+04:57:46 From  Eric Sims  to  Everyone : LinkedIn scraping ruling???
+04:58:07 From  Kristen Davis  to  Everyone : Will you speak more about that case/ ruling?
+04:58:15 From  Mikiko Bazeley  to  Everyone : Last year/year before: https://www.forbes.com/sites/emmawoollacott/2019/09/10/linkedin-data-scraping-ruled-legal/?sh=a0f2baa1b54b
+04:58:19 From  Mikiko Bazeley  to  Everyone : For the ruling
+04:58:21 From  Joe Reis  to  Everyone : https://www.eff.org/deeplinks/2019/09/victory-ruling-hiq-v-linkedin-protects-scraping-public-data
+04:58:26 From  Matthew Housley  to  Everyone : If you’re careful about scraping rate, you’re much less likely to run into problems. Be a good citizen and be considerate of whoever owns the servers.
+04:58:47 From  Joe Reis  to  Everyone : Matt - you’re saying it’s not ok to ddos someone’s site?
+04:58:54 From  Joe Reis  to  Everyone : What a buzzkill
+04:59:08 From  Mikiko Bazeley  to  Everyone : I did that once to Indeed
+04:59:11 From  Mikiko Bazeley  to  Everyone : Accidentally
+04:59:19 From  Mikiko Bazeley  to  Everyone : My first time learning how to scrape
+04:59:21 From  Joe Reis  to  Everyone : lol. You get a medal today
+04:59:21 From  Mikiko Bazeley  to  Everyone : Fun times
+04:59:36 From  Matthew Housley  to  Everyone : I suspect that many junior data scientists with a dream and an AWS account have done exactly this by using Lambda and not calculating how much traffic they’re generating.
+04:59:54 From  Mikiko Bazeley  to  Everyone : This was 7 years ago, when “Growth Hacking” had peaked
+05:00:01 From  Mikiko Bazeley  to  Everyone : So pure R power
+05:01:29 From  Mikiko Bazeley  to  Everyone : Cost
+05:01:49 From  Mikiko Bazeley  to  Everyone : Good candidate for how to get into trouble with Lambda
+05:02:52 From  Mark Freeman  to  Everyone : Main takeaway… I do not want to work on a scraper (especially if I ever freelance)
+05:03:24 From  Juico Bowley  to  Everyone : Thanks everyone! Now I'll go through and grab all the nice links for reference! =D
+05:04:11 From  Mikiko Bazeley  to  Everyone : @Mark - It’s sort of easy money though when it comes to billable - like how burger shops make more money on the sides and amenities than the main food items
+05:05:19 From  Kushal Dev  to  Everyone : @Mikiko - Awesome Analogy, totally agree!!
+05:06:01 From  Mark Freeman  to  Everyone : CRISP-DM!
+05:06:23 From  Akshay Mandke  to  Everyone : In Simplest terms it could start with defining a data dictionary
+05:06:33 From  Mark Freeman  to  Everyone : CRISP-DM: https://www.datascience-pm.com/crisp-dm-2/
+05:07:41 From  Kushal Dev  to  Everyone : Yeahh, Very traditional indeed CRISP-DM!
+05:11:52 From  Russell Willis  to  Everyone : @Mikiko "Budget" is one of the ambiguous titles in cost data I find!
+05:11:54 From  Ashoordin Ashoormaram  to  Everyone : Mikiko, what do we need vs what do we have? Is this the same as saying to know which data/features are useless or not? And if not, to remove the garbage and instead create new useful features?
+05:14:23 From  Mark Freeman  to  Everyone : Can I add something to this regarding checking assumptions?
+05:14:42 From  Harpreet Sahota  to  Everyone : Sure: let’s hear from vin, them, and then mark on. this
+05:14:53 From  Harpreet Sahota  to  Everyone : Then we’ll have Ashoordin ask his question, because its great
+05:15:08 From  Harpreet Sahota  to  Everyone : Them = thom
+05:19:06 From  Mikiko Bazeley  to  Everyone : @Ashoordin: https://www.linkedin.com/posts/crmercado_datascience-deeplearning-artificialintelligence-activity-6767800296333811712-Jf8r
+05:19:38 From  Mikiko Bazeley  to  Everyone : This is a good illustration of how just because you have features, doesn’t mean they’re relevant or sensible
+05:20:47 From  Thomas Ives  to  Everyone : What Mikiko said! AND you should be checking the power of those features anyway!
+05:21:41 From  Ashoordin Ashoormaram  to  Everyone : Thank you Mikiko,
+05:22:35 From  Ashoordin Ashoormaram  to  Everyone : Sure Thomas, that's also an important step to take.
+05:23:03 From  Mikiko Bazeley  to  Everyone : @Ashoordin: Another way to think about it is, how would you predict buying a home? It’s a super long lifecycle, you don’t have the data from clickstreams that e-commerce companies have, etc
+05:23:32 From  Mikiko Bazeley  to  Everyone : If you just use the data that’s widely available, you’ll most likely get really poor results
+05:23:37 From  Ashoordin Ashoormaram  to  Everyone : Yea, good analogy!
+05:24:20 From  Mark Freeman  to  Everyone : 5 Steps of Design Thinking: https://voltagecontrol.com/blog/5-steps-of-the-design-thinking-process-a-step-by-step-guide/
+05:24:45 From  Mark Freeman  to  Everyone : Startup Lean Launchpad: https://steveblank.com/category/lean-launchpad/
+05:25:43 From  Ashoordin Ashoormaram  to  Everyone : This is a great read Mark! I will definitely take my time to read it.
+05:25:44 From  Mikiko Bazeley  to  Everyone : My biggest fan!
+05:25:50 From  Mark Freeman  to  Everyone : SAME! Mikiko is awesome
+05:26:24 From  Mikiko Bazeley  to  Everyone : <3
+05:26:38 From  Vikram Krishna Kotturu  to  Everyone : Mikiko is awesome
+05:26:47 From  Mikiko Bazeley  to  Everyone : <3 <3 <3
+05:26:50 From  Kushal Dev  to  Everyone : Mikiko is always on top with Resources!
+05:26:56 From  Kushal Dev  to  Everyone : I appreciate!
+05:27:09 From  Greg Coquillo  to  Everyone : Go Mikiko! My fave!
+05:27:16 From  Mikiko Bazeley  to  Everyone : <3 fo everyone! You have a <3 ! You have a <3 !
+05:27:44 From  Mikiko Bazeley  to  Everyone : Squrespace!
+05:27:45 From  Mark Freeman  to  Everyone : Create a script that scrapes zoom chat and posts to slack ;)
+05:27:46 From  Harpreet Sahota  to  Everyone : https://join.slack.com/t/artofdatascienceloft/shared_invite/zt-dgzn8abm-ge_dKGxrc9Dsuhnly90WTw
+05:27:47 From  Mikiko Bazeley  to  Everyone : It’s worth it!
+05:28:10 From  Kushal Dev  to  Everyone : Join Slack! It's Amazing Indeed!
