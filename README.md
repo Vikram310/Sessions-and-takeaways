@@ -1,2 +1,2 @@
-# Integrated-Mentoring-Sessions-and-ML-Pipeline
-My takeaways on Integrated sessions and ML Pipelines
+# Sessions and Takeaways
+My takeaways on all the sessions I will attend
