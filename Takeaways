@@ -105,3 +105,30 @@ My Takeaways:
 ✔️ README section of GitHub is critical as HR recruiter who views your profile has minimal knowledge of technology, and we have this chance to impress him with the ReadMe section, i.e. we can add an overview of the project, what motivated us to do this.
 ✔️ Having an online portfolio is very important and also can ease the process of recruitment. We just need to add highlights of our project i.e. why this approach and what did you gain using this.
 ✔️ Always try to have weekly status meetings on your projects to discuss your problems and blockers in your path. If you train yourself to PM your projects, you will be better prepared when you have to deliver the final project.
+
+Session 10
+My Takeaways:
+✔️ It's really the best way to start from the easier/simplest one rather than a complicated one while solving any business case.
+✔️ Discussed how to approach any business query which I discussed in detail in the comments.
+✔️ Don't give much time lag while solving any new business case because your competitor may come up with a better solution and may take away the deal from your hand.
+✔️Invite stakeholders to technical meetings so that one gets to know what amount of risk they are willing to spend.
+✔️ Shared few resources which help in upskilling in the field of Data Science (check the comments)
+
+Approach to solve any business query:
+
+-Take some time to learn the business and meet all of your stakeholders. (Can take at least 3 months)
+-Interview stakeholders to identify gaps or pain points
+-Select a few pain points and create a scrappy solution
+-Draft business case and estimate impact of the potential solution
+-Build a scrappy solution and bring it to a few key stakeholders for testing and to gain alignment.
+-After successful testing, get key stakeholders to commit to supporting the full delivery of the project, as risk is mitigated and the business case is finalized
+-Build your team, project plan, including the timeline
+-Execute on the plan
+-Deliver solution
+-Sustain solution
+
+Resources: 
+
+Statsquest - https://www.youtube.com/user/joshstarmer
+3Blue1Brown - https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
+Follow Eric Weber for daily wisdom on Data
